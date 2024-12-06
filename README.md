@@ -1,11 +1,30 @@
-# Sample Snack app
+# Gerenciador Dinâmico de Listas em React Native
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Este projeto é uma aplicação em React Native que demonstra o gerenciamento dinâmico de listas com funcionalidades de filtragem, ordenação e manipulação de itens entre múltiplas listas. A interface é simples e intuitiva, utilizando componentes do React Native.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+## Funcionalidades
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+- **Listas Dinâmicas:** Gerencie três listas com a capacidade de mover itens entre elas.
+- **Filtragem de Itens:** Filtre itens na "Lista 1" utilizando um campo de texto.
+- **Ordenação:** Ordene as listas em ordem crescente ou decrescente com base no título dos itens.
+- **Contador de Cliques:** Acompanhe e exiba o número de cliques em cada item.
+- **Adicionar Novos Itens:** Adicione itens únicos à "Lista 1" através de um campo de entrada.
+- **Lógica de Movimentação de Itens:** 
+  - Mova itens da "Lista 1" para a "Lista 2" ao clicar.
+  - Mova itens da "Lista 2" para a "Lista 3" com base no número de cliques ou interação.
+- **Interface Limpa:** Layout organizado com componentes reutilizáveis.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+## Componentes
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+- **`ItemComponent`**: Renderiza itens individuais, exibindo detalhes e o contador de cliques.
+- **`ListComponent`**: Exibe uma lista utilizando `FlatList` para melhor desempenho.
+- **`MapListComponent`**: Renderiza uma lista utilizando `map` para maior flexibilidade.
+- **`InputField`**: Lida com entrada de texto para filtrar e adicionar novos itens.
+- **`SortButton`**: Oferece funcionalidade de ordenação para as listas.
+
+## Como Executar
+
+1. Clone o repositório.
+2. Instale as dependências:
+   ```bash
+   npm install
